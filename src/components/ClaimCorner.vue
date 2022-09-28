@@ -38,8 +38,20 @@ export default {
     right: 0;
 }
 .col1{
+    @media only screen and (max-width: 980px){
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
     img{
         width: 422px;
+        @media only screen and (max-width: 980px){
+            width: 300px;
+            margin-bottom: 30px;
+        }
+        @media only screen and (max-width: 580px){
+            width: 260px;
+        }
     }
 }
 .title{
@@ -55,17 +67,28 @@ export default {
     span{
         font-weight: 700;
     }
+    @media only screen and (max-width :580px){
+        font-size: 36px;
+        line-height: 45px;
+    }
 }
 .inputWrapper{
     position: relative;
     z-index: 1;
+    @media only screen and (max-width :980px){
+        flex-direction: column;
+    }
         input{
             border-radius: 100px;
             margin-right: 15px;
         }
         .btn-dark{
+            width: min-content;
             min-width: 210px;
             border-radius: 100px;
+            @media only screen and (max-width :980px){
+                margin-top: 15px;
+            }
         }
     }
 </style>

@@ -90,12 +90,21 @@ export default {
         align-items: center;
         justify-content: center;
         margin-bottom: 50px;
+        svg{
+            @media only screen and (max-width: 780px){
+                width: 50px;
+                height: 50px;
+            }
+        }
         .title{
             font-family: 'Nunito';
             font-weight: 800;
             font-size: 40px;
             color: #000000;
             margin-left: 24px;
+            @media only screen and (max-width: 780px){
+                font-size: 32px;
+            }
         }
     }
     .heading{
@@ -106,6 +115,10 @@ export default {
         line-height: 65px;
         text-align: center;
         color: #222222;
+        @media only screen and (max-width: 780px){
+            font-size: 36px;
+            line-height: 55px;
+        }
     }
     .sub-heading{
         font-family: 'Nunito';
@@ -140,10 +153,21 @@ export default {
             box-shadow: none;
             background: transparent;
             background-color: transparent;
-            width: 280px;
             height: 360px;
             margin: 0 20px;
             border-radius: 20px;
+            @media only screen and (max-width:980px){
+                height: 280px;
+                margin: 0 10px;
+            }
+            @media only screen and (max-width:780px){
+                height: 250px;
+                margin: 0 10px;
+            }
+            @media only screen and (max-width:580px){
+                height: 200px;
+                margin: 0 10px;
+            }
         }
         &::-webkit-scrollbar {
         display: none;

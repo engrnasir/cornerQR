@@ -25,6 +25,14 @@ export default {
     .wrapper{
         padding: 130px 0;
         background: #FFC727;
+        @media only screen and (max-width: 980px){
+            padding: 80px 0;
+        }
+    }
+    .row{
+        @media only screen and (max-width: 980px){
+            flex-direction: column;
+        }
     }
     .col1{
         img{
@@ -41,6 +49,10 @@ export default {
             line-height: 55px;
             color: #222222;
             margin-bottom: 30px;
+            @media only screen and (max-width: 780px){
+                font-size: 28px;
+                line-height: 35px;
+            }
             .create{
                 color: rgba(34, 34, 34, 0.7);
                 font-weight: 400;
@@ -57,6 +69,10 @@ export default {
                 font-size: 18px;
                 line-height: 29px;
                 color: rgba(0, 0, 0, 0.7);
+                @media only screen and (max-width: 780px){
+                    font-size: 14px;
+                    line-height: 18px;
+                }
             }
         }
         .btn-dark{

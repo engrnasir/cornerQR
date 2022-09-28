@@ -1,8 +1,8 @@
 <template>
   <div class="home">
     <HeaderComp/>
-    <HowItsWork/>
-    <CornerSky/>
+     <HowItsWork/>
+     <CornerSky/>
     <BeyondTheBook/>
     <OurBook/>
     <AnalyzeReader/>

@@ -56,6 +56,9 @@ export default {
 <style lang="scss" scoped>
     .wrapper{
         padding: 150px 0;
+        @media only screen and (max-width: 990px){
+            padding: 80px 0;
+        }
     }
     .col1{
         font-family: 'Nunito';
@@ -65,6 +68,9 @@ export default {
             font-size: 48px;
             color: #000000;
             margin-bottom: 20px;
+            @media only screen and (max-width: 580px){
+                font-size: 32px;
+            }
         }
         .subtitle{
             font-family: 'Nunito';
@@ -78,6 +84,14 @@ export default {
             background: #FFC727;
             border-radius: 10px;
             margin-bottom: 48px;
+            @media only screen and (max-width: 580px){
+                font-size: 20px;
+                width: 250px;
+                padding: 16px 20px;
+                line-height: 40%;
+                height: 38px;
+                margin-bottom: 28px;
+            }
 
         }
         .snippet{
@@ -87,6 +101,9 @@ export default {
             font-size: 18px;
             color: rgba(0, 0, 0, 0.7);
             margin-bottom: 34px;
+            @media only screen and (max-width: 580px){
+                font-size: 14px;
+            }
         }
         .btn-dark{
             background: #222222;
@@ -96,14 +113,26 @@ export default {
             font-size: 16px;
             line-height: 25px;
             color: #FFFFFF;
+            @media only screen and (max-width: 580px){
+                font-size: 14px;
+            }
         }
     }
     .col2{
+        @media only screen and (max-width: 990px){
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
         .cards{
+            max-width: 600px;
             display: grid;
             grid-template-columns: repeat(3,1fr);
             grid-gap: 10px;
             justify-items: center;
+            @media only screen and (max-width: 990px){
+                margin-top: 30px;
+            }
             .card{
                 width: 180px;
                 height: 180px;
@@ -113,6 +142,20 @@ export default {
                 display:flex;
                 align-items: center;
                 justify-content: center;
+                @media only screen and (max-width: 1200px){
+                    width: 150px;
+                    height: 150px;
+                }
+                @media only screen and (max-width: 500px){
+                    width: 80px;
+                    height: 80px;
+                }
+                svg{
+                    @media only screen and (max-width: 580px){
+                        width: 35px;
+                        height: 35px;
+                    }
+                }
             }
             .card2,.card4,.card6{
                 background: #D9912B;

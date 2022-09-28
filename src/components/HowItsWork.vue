@@ -83,22 +83,33 @@ export default {
     .wrapper{
         padding: 100px 0;
         background: #f5f5f5;
+        caret-color: transparent;
     }
     .col1{
         display: flex;
         align-items: center;
         justify-content: center;
         margin-bottom: 50px;
+        svg{
+            @media only screen and (max-width:780px){
+                width: 50px;
+                height: 50px;
+            }
+        }
         .title{
             font-family: 'Nunito';
             font-weight: 800;
             font-size: 40px;
             color: #000000;
             margin-left: 24px;
+            @media only screen and (max-width:780px){
+                font-size: 32px;
+            }
         }
     }
     .list{
         list-style: none;
+        min-width: 300px;
         .sub-heading{
             font-family: 'Nunito';
             font-style: normal;
@@ -108,6 +119,12 @@ export default {
             margin-bottom: 20px;
             span{
                 color: #FFC727;
+            }
+            @media only screen and (max-width:980px){
+                font-size: 32px;
+            }
+            @media only screen and (max-width:780px){
+                font-size: 28px;
             }
         }
         .list-item{
@@ -133,12 +150,24 @@ export default {
                 line-height: 24px;
                 color: #222222;
                 margin: 0;
+                @media only screen and (max-width:780px){
+                    font-size: 13px;
+                }
             }
             
         }
     }
     .cuate{
         width: 402px;
+        @media only screen and (max-width:980px){
+            width: 320px;
+        }
+        @media only screen and (max-width:780px){
+            margin-top: 25px;
+        }
+        @media only screen and (max-width:580px){
+            width: 220px;
+        }
     }
 
 </style>

@@ -76,6 +76,9 @@
   <style lang="scss" scoped>
       .wrapper{
           padding: 150px 0;
+          @media only screen and (max-width:980px){
+            padding: 80px 0;
+          }
       }
       .col1{
           font-family: 'Nunito';
@@ -88,6 +91,9 @@
               span{
                 font-weight: 500;
               }
+              @media only screen and (max-width:580px){
+                font-size: 32px;
+            }
           }
           .subtitle{
               font-family: 'Nunito';
@@ -101,6 +107,10 @@
               background: #FFC727;
               border-radius: 10px;
               margin-bottom: 48px;
+              @media only screen and (max-width:580px){
+                font-size: 28px;
+                width: 220px;
+            }
   
           }
           .snippet{
@@ -122,13 +132,22 @@
           }
       }
       .col2{
+        @media only screen and (max-width:980px){
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
           .cards{
               display: grid;
               grid-template-columns: repeat(2,1fr);
               grid-gap: 10px;
               justify-items: center;
+              @media only screen and (max-width:980px){
+                margin-top: 30px;
+                
+              }
               .card{
-                width: 100%;
+                  width: 100%;
                   min-width: 180px;
                   height: 180px;
                   background: #FFC727;
@@ -138,8 +157,21 @@
                   flex-direction: row;
                   align-items: center;
                   justify-content: center;
+                  padding: 10px 15px;
+                  @media only screen and (max-width:580px){
+                        width: 100%;
+                        min-width: 140px;
+                        height: 140px;
+                    }
                   .icon{
                     margin-right: 15px;
+                    svg{
+                        @media only screen and (max-width:580px){
+                            width: 50px;
+                            height: 50px;
+                        }
+
+                    }
                   }
                   .detail{
                     text-align: center;
@@ -151,6 +183,9 @@
                         color: #222222;
                         line-height: 48px;
                         margin-bottom: 10px;
+                        @media only screen and (max-width:580px){
+                            font-size: 32px;
+                        }
                     }
                     .text{
                         font-family: 'Nunito';
